@@ -1,0 +1,6 @@
+s:724:"<p>Si quiere que el certificado imprima nombres diferentes para el profesor en lugar de aquellos que tienen asignado el rol de profesor, no elija 'Imprimir Profesor' ni seleccione imagen de firma, exceptuando la imagen de línea. Introduzca los nombres de los profesores en este cuadro de texto tal como usted quiera que aparezcan. Por defecto, este texto se coloca en la parte inferior izquierda del certificado. Las siguientes marcas (tags) HTML están disponibles:<br />,</p>
+
+<p>&lt;</p>
+
+<p>p&gt;, <b>, <i>, <u>,  (src y width/height son obligatorias), <a> (href es obligatoria), <font> (los atributos posibles son: color, (hex color code), face, (arial, times, courier, helvetica, symbol)).</font></a></u></i></b></p>
+";

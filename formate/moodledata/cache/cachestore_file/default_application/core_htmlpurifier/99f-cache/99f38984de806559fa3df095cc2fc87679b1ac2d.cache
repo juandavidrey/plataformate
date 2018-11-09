@@ -1,0 +1,8 @@
+s:643:"<p>Este parámetro, junto con el tipo de URL, y siempre que el navegador permita incorporar código, determina cómo se muestra la dirección URL.
+Las opciones pueden incluir:</p>
+
+<ul><li>Automático - Se selecciona de forma automática la mejor opción para visualizar la dirección URL</li>
+<li>Incrustar - La URL se muestra dentro de la página debajo de la barra de navegación junto con la descripción y cualquier otro bloque</li>
+<li>Abrir  - Sólo se muestra la dirección en la ventana del navegador</li>
+<li>En ventana emergente - La URL se muestra en una ventana nueva del navegador sin menús y sin barra de direcciones</li>
+</ul>";

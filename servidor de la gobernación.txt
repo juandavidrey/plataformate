@@ -1,0 +1,66 @@
+Estimado Manuel Danilo Perez Viatela,
+Buena tarde,
+
+Se ha configurado una Máquina virtual con las siguientes características:
+
+* 2CPU
+* 3GB Ram
+* 100GB HDD
+
+Se ha instalado en ella un LAMP con lo siguiente:
+
+* Centos 7
+* PHP 7.2
+* MariaDB 10.3
+* phpMyAdmin
+* nano, wget, nmap, unzip y dependencias requeridas.
+
+Credenciales y accesos:
+
+* IP 172.22.66.85
+
+*Usuarios
+S.O
+user: adminsrvr pass: S3rv1d0rM3t4
+user: root pass: S3rv1d0rMet4
+mysql
+user: root pass: S3rv1d0rM3t4
+phpmyadmin
+user: root pass: S3rv1d0rM3t4
+
+Otros:
+¿Qué servicio SMTP utilizan en la gobernación?, se necesitaria la menos dos cuentas de correo: admin.plataformate, y no-repy.plataformate. La primera para la cuenta de administrador y la segunda para envio de correo en registro de usuarios.
+RTA: Se solicitó a la gerencia de TICs la asignación de los dos correos institucionales, tan pronto nos resuelvan la solicitud se les estará informando
+
+Se requiere acceso SSH a la máquina mediante un usuario con la opción de escalar privilegios para instalación de software y/o configuraciones adicionales.
+RTA: Se instala openssh-server y se entregan las debidas credenciales más arriba en esta misma respuesta.
+
+¿La infraestructura tecnológica de la gobernación cuenta con un servidor DNS?, ¿es posible realizar el traspaso de propiedad del dominio plataformate.com.
+RTA: La Gobernación del Meta cuenta con DNS interno/Externo para el direccionamiento de sus dominios y subdominios.
+
+¿Cuál sería la IP pública de la máquina hacia la cuál debería apuntar el registro DNS?, modificar los actuales pueden tardar hasta 24 horas en replicar los cambios.
+RTA: La ip del proxy web de la Gobernación del Meta es 190.26.195.245, sin embargo, solo se realizarán los cambios correspondientes en los DNS internos/externos y en el proxyweb cuando el sistema este configurando y listo para salir a producción.
+
+El acceso administrativo a la máquina virtual solo se permite desde un segmento de la red local en el edificio de la Gobernación del Meta o opr VPN, por favor informar a esta Mesa de Ayuda que método de los dos anetriormente expuestos deseen emplear.
+
+
+
+El equipo de Mesa de ayuda Gobernación del Meta,
+______________________________________________________________________________________________
+
+
+Estimado Manuel Danilo Perez Viatela,
+Para acceder a la VPN:
+
+1. ir a la url: https://190.26.195.242/ (si aparece mensaje de advertencia, ir al link inferior de opciones avanzadas y continuar)
+2. ingresar las credeciales de acceso. usuario: plataformate, password: Pl4t42018$
+3. al ingresar, seleccionar el link superior derecho "options"
+4. seleccionar link inferior "Download network extension client"
+5. se descarga el instalador llamado "quidwaysvnclient"
+6. instalarlo.
+7. cuando este instalado, ejecutar (con doble clic).
+8. ingresar los datos de acceso usuario: plataformate, password: Pl4t42018$ URL: 190.26.195.246 y dar clic en "Login"
+
+Este cliente es compatible para sistemas operativos Windows y Mac.
+____________________________________________________________________________________________
+C:\Windows\System32\drivers\etc\hosts
