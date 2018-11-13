@@ -1,0 +1,243 @@
+********************************************************************************
+* DUPLICATOR-LITE: INSTALL-LOG
+* VERSION: 1.2.42
+* STEP-1 START @ 02:40:16
+* NOTICE: Do NOT post this data to public sites or forums
+********************************************************************************
+PHP VERSION:	7.2.10 | SAPI: fpm-fcgi
+PHP TIME LIMIT:	[0] time limit restriction disabled
+PHP MEMORY:	2048M | SUHOSIN: disabled
+SERVER:		nginx/1.12.2
+DOC ROOT:	/usr/share/nginx/html/enterate
+DOC ROOT 755:	true
+LOG FILE 644:	true
+REQUEST URL:	http://enterate.plataformate.com/installer.php
+SAFE MODE :	0
+--------------------------------------
+ARCHIVE EXTRACTION
+--------------------------------------
+NAME:	20180827_enterate_d6886dd674d112a31752180827220020_archive.zip
+SIZE:	105.33MB
+ZIP:	Enabled (ZipArchive Support)
+
+>>> START EXTRACTION:
+ZipArchive Object
+(
+    [status] => 0
+    [statusSys] => 0
+    [numFiles] => 14621
+    [filename] => /usr/share/nginx/html/enterate/20180827_enterate_d6886dd674d112a31752180827220020_archive.zip
+    [comment] => 
+)
+File timestamp is 'Current' mode: 2018-09-22 14:40:17
+<<< EXTRACTION COMPLETE: true
+
+WEB SERVER CONFIGURATION FILE RESET:
+- Backup of .htaccess/web.config made to *.180922144017.orig
+- Reset of .htaccess/web.config files
+
+STEP-1 COMPLETE @ 02:40:17 - RUNTIME: 1.9471 sec.
+
+
+********************************************************************************
+* DUPLICATOR-LITE: INSTALL-LOG
+* STEP-2 START @ 03:00:58
+* NOTICE: Do NOT post to public sites or forums
+********************************************************************************
+--------------------------------------
+DATABASE ENVIRONMENT
+--------------------------------------
+MYSQL VERSION:	This Server: 10.3.9 -- Build Server: 10.1.32
+FILE SIZE:	database.sql (1.19MB) - installer-data.sql (1.19MB)
+TIMEOUT:	5000
+MAXPACK:	16777216
+SQLMODE:	STRICT_TRANS_TABLES,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION
+NEW SQL FILE:	[/usr/share/nginx/html/enterate/installer-data.sql]
+COLLATE RESET:	On
+
+--------------------------------------
+DATABASE RESULTS
+--------------------------------------
+ERRORS FOUND:	0
+TABLES DROPPED:	
+QUERIES RAN:	506
+
+wp_ap_activity: (0)
+wp_ap_qameta: (0)
+wp_ap_reputations: (0)
+wp_ap_subscribers: (1)
+wp_ap_views: (0)
+wp_ap_votes: (0)
+wp_commentmeta: (0)
+wp_comments: (2)
+wp_duplicator_packages: (1)
+wp_links: (0)
+wp_options: (369)
+wp_pollsa: (9)
+wp_pollsip: (1)
+wp_pollsq: (2)
+wp_postmeta: (394)
+wp_posts: (189)
+wp_qa_follow: (0)
+wp_term_relationships: (25)
+wp_term_taxonomy: (29)
+wp_termmeta: (0)
+wp_terms: (29)
+wp_totalsoft_fonts: (125)
+wp_totalsoft_new_plugin: (2)
+wp_totalsoft_poll_answers: (2)
+wp_totalsoft_poll_dbt: (18)
+wp_totalsoft_poll_id: (1)
+wp_totalsoft_poll_iminqu: (4)
+wp_totalsoft_poll_iminqu_1: (4)
+wp_totalsoft_poll_impoll: (4)
+wp_totalsoft_poll_impoll_1: (4)
+wp_totalsoft_poll_imwibu: (4)
+wp_totalsoft_poll_imwibu_1: (4)
+wp_totalsoft_poll_inform: (0)
+wp_totalsoft_poll_manager: (1)
+wp_totalsoft_poll_quest_im: (1)
+wp_totalsoft_poll_results: (2)
+wp_totalsoft_poll_setting: (1)
+wp_totalsoft_poll_stpoll: (4)
+wp_totalsoft_poll_stpoll_1: (4)
+wp_totalsoft_poll_stwibu: (2)
+wp_totalsoft_poll_stwibu_1: (2)
+wp_usermeta: (32)
+wp_users: (1)
+wp_wpforo_accesses: (5)
+wp_wpforo_forums: (2)
+wp_wpforo_languages: (1)
+wp_wpforo_likes: (0)
+wp_wpforo_phrases: (471)
+wp_wpforo_posts: (0)
+wp_wpforo_profiles: (1)
+wp_wpforo_subscribes: (0)
+wp_wpforo_topics: (0)
+wp_wpforo_usergroups: (5)
+wp_wpforo_views: (0)
+wp_wpforo_visits: (0)
+wp_wpforo_votes: (0)
+
+Removed '27' cache/transient rows
+
+CREATE/INSTALL RUNTIME: 0.5941 sec.
+STEP-2 COMPLETE @ 03:00:58 - RUNTIME: 0.6003 sec.
+
+
+********************************************************************************
+* DUPLICATOR-LITE: INSTALL-LOG
+* STEP-3 START @ 03:01:31
+* NOTICE: Do NOT post to public sites or forums
+********************************************************************************
+CHARSET SERVER:	latin1
+CHARSET CLIENT:	utf8
+--------------------------------------
+SERIALIZER ENGINE
+[*] scan every column
+[~] scan only text columns
+[^] no searchable columns
+--------------------------------------
+wp_ap_activity^ (0)
+wp_ap_qameta^ (0)
+wp_ap_reputations^ (0)
+wp_ap_subscribers~ (1)
+wp_ap_views^ (0)
+wp_ap_votes^ (0)
+wp_commentmeta^ (0)
+wp_comments~ (2)
+wp_duplicator_packages^ (0)
+wp_links^ (0)
+wp_options~ (340)
+wp_pollsa~ (9)
+wp_pollsip~ (1)
+wp_pollsq~ (2)
+wp_postmeta~ (394)
+wp_posts~ (189)
+wp_qa_follow^ (0)
+wp_term_relationships~ (25)
+wp_term_taxonomy~ (29)
+wp_termmeta^ (0)
+wp_terms~ (29)
+wp_totalsoft_fonts~ (125)
+wp_totalsoft_new_plugin~ (2)
+wp_totalsoft_poll_answers~ (2)
+wp_totalsoft_poll_dbt~ (18)
+wp_totalsoft_poll_id~ (1)
+wp_totalsoft_poll_iminqu~ (4)
+wp_totalsoft_poll_iminqu_1~ (4)
+wp_totalsoft_poll_impoll~ (4)
+wp_totalsoft_poll_impoll_1~ (4)
+wp_totalsoft_poll_imwibu~ (4)
+wp_totalsoft_poll_imwibu_1~ (4)
+wp_totalsoft_poll_inform^ (0)
+wp_totalsoft_poll_manager~ (1)
+wp_totalsoft_poll_quest_im~ (1)
+wp_totalsoft_poll_results~ (2)
+wp_totalsoft_poll_setting~ (1)
+wp_totalsoft_poll_stpoll~ (4)
+wp_totalsoft_poll_stpoll_1~ (4)
+wp_totalsoft_poll_stwibu~ (2)
+wp_totalsoft_poll_stwibu_1~ (2)
+wp_usermeta~ (32)
+wp_users~ (1)
+wp_wpforo_accesses~ (5)
+wp_wpforo_forums~ (2)
+wp_wpforo_languages~ (1)
+wp_wpforo_likes^ (0)
+wp_wpforo_phrases~ (471)
+wp_wpforo_posts^ (0)
+wp_wpforo_profiles~ (1)
+wp_wpforo_subscribes^ (0)
+wp_wpforo_topics^ (0)
+wp_wpforo_usergroups~ (5)
+wp_wpforo_views^ (0)
+wp_wpforo_visits^ (0)
+wp_wpforo_votes^ (0)
+--------------------------------------
+Search1:	'C:/xampp/htdocs/wordpress' 
+Change1:	'/usr/share/nginx/html/enterate' 
+Search2:	'C:\/xampp\/htdocs\/wordpress' 
+Change2:	'\/usr\/share\/nginx\/html\/enterate' 
+Search3:	'C%3A%2Fxampp%2Fhtdocs%2Fwordpress%2F' 
+Change3:	'%2Fusr%2Fshare%2Fnginx%2Fhtml%2Fenterate%2F' 
+Search4:	'C:\xampp\htdocs\wordpress' 
+Change4:	'/usr/share/nginx/html/enterate' 
+Search5:	'//localhost/wordpress' 
+Change5:	'//enterate.plataformate.com' 
+Search6:	'\/\/localhost\/wordpress' 
+Change6:	'\/\/enterate.plataformate.com' 
+Search7:	'%2F%2Flocalhost%2Fwordpress' 
+Change7:	'%2F%2Fenterate.plataformate.com' 
+SCANNED:	Tables:56 	|	 Rows:1728 	|	 Cells:12507 
+UPDATED:	Tables:1 	|	 Rows:190 	|	 Cells:199 
+ERRORS:		0 
+RUNTIME:	0.123100 sec
+
+====================================
+CONFIGURATION FILE UPDATES:
+====================================
+
+UPDATED WP-CONFIG: /wp-config.php' (if present)
+
+WEB SERVER CONFIGURATION FILE BASIC SETUP:
+- Preparing .htaccess file with basic setup.
+Basic .htaccess file edit complete.  If using IIS web.config this process will need to be done manually.
+
+====================================
+GENERAL UPDATES & CLEANUP:
+====================================
+
+- Created directory wp-snapshots
+- Created file wp-snapshots/index.php
+
+====================================
+NOTICES
+====================================
+
+No Notices Found
+
+
+STEP 3 COMPLETE @ 03:01:32 - RUNTIME: 0.1368 sec.
+
+

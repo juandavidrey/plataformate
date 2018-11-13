@@ -1,4 +1,0 @@
-s:296:"<p>Las variables son elementos especiales, como '{$a}' o '{$a-&gt;algo_más}' dentro de una cadena. Se reemplazan con un valor cuando se aplica la cadena .</p>
-
-<p>Es importante copiarlas exactamente igual a como están en la cadena original. No las traduzca ni cambie su estructura interna.</p>
-";
