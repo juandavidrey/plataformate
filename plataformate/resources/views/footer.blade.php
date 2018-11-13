@@ -1,5 +1,5 @@
 {{-- @include('layout') --}}
-<footer style="position:absolute; padding-bottom:-25%;" >
+<footer style="margin-bottom: -25%;" >
 
   <div class="container" style="">
     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
