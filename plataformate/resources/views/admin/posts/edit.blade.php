@@ -101,7 +101,7 @@
 
           <div class="form-group {{ $errors->has('rol_contacto') ? 'has-error': '' }}">
             <label>Rol en la organización</label>
-            <textarea name="rol_contacto" class="form-control" placeholder="Rol del contacto en la organización">{{ old('rol_contacto', $post->rol_contacto) }}</textarea>
+            <textarea name="rol_contacto" class="form-control" placeholder="Rol del contacto en la organización">{{ old('rol', $post->rol) }}</textarea>
             {!! $errors->first('rol_contacto', '<span class="help-block">:message</span>') !!}
           </div>
 

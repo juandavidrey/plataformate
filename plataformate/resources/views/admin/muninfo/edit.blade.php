@@ -11,42 +11,77 @@
 @endsection
 
 @section('content')
-	<!-- Uso de laravel collective -->
-	{{ Form::model($municipio, array('route' => array('admin.muninfo.update', $municipio->id), 'method' => 'PUT', 'files' => true)) }}
+  @if(!empty($municipio->fotorep1 || $municipio->fotorep2))
+    {{ Form::open(['method' => 'DELETE', 'route' => ['admin.muninfo.destroy', $municipio->id]]) }}
+    {{ method_field('DELETE') }} {{ csrf_field() }}
+      <button class="btn btn-danger btn-xs" >
+        Borrar fotos
+      </button>
+    {{ Form::close() }}
+  @endif
+  @if(!empty($municipio->fotorep1))
+  <div class="col-md-12">
+    <div class="box box-primary">
+      <div class="box box-body">
+        <div class="row">
+            <div class="col-xs-4 col-md-3">
+              <img class="img-responsive" src="{{ Storage::url( $municipio->fotorep1 ) }}">
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  @endif
+  @if(!empty($municipio->fotorep2))
+  <div class="col-md-12">
+    <div class="box box-primary">
+      <div class="box box-body">
+        <div class="row">
+            <div class="col-xs-4 col-md-3">
+                Borrar fotos
+              <img class="img-responsive" src="{{ Storage::url( $municipio->fotorep2 ) }}">
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  @endif
+  <!-- Uso de laravel collective -->
+  {{ Form::model($municipio, array('route' => array('admin.muninfo.update', $municipio->id), 'method' => 'PUT', 'files' => true)) }}
 	<div class="row">
 	<div class="col-xs-12 col-sm-6 col-md-6">
 		<div class="box box-primary">
 			<div class="box-body">
-					
+
 						<div class="form-group {{ $errors->has('representante1') ? 'has-error': '' }}">
 								{{ Form::label('representante1', 'Nombre del representante 1') }}
 								{{ Form::text('representante1', null, array('class' => 'form-control', 'placeholder'=>'Digita el nombre del representante')) }}
                 {!! $errors->first('representante1', '<span class="help-block">:message</span>') !!}
 						</div>
-            
+
 						<div class="form-group {{ $errors->has('rol_rep_1') ? 'has-error': '' }}">
 							{{ Form::label('rol_rep_1', 'Rol del representante 1') }}
 							{{ Form::text('rol_rep_1', null, array('class' => 'form-control', 'placeholder'=>'Digita el rol del representante')) }}
               {!! $errors->first('rol_rep_1', '<span class="help-block">:message</span>') !!}
 						</div>
-						
+
 						 <div class="form-group {{ $errors->has('correo_rep_1') ? 'has-error': '' }}">
 					{{ Form::label('correo_rep_1', 'Correo del representante 1') }}
-					{{ Form::text('correo_rep_1', null, array('class' => 'form-control', 'placeholder'=>'Digita el correo electrónico')) }}
+					{{ Form::text('correo_rep_1', null, array('class' => 'form-control', 'placeholder'=>'Digita el correo electrÃ³nico')) }}
           {!! $errors->first('correo_rep_1', '<span class="help-block">:message</span>') !!}
 				</div>
 						<div class="form-group {{ $errors->has('telefono_rep_1') ? 'has-error': '' }}">
 					{{ Form::label('telefono_rep_1', 'Teléfono del representante 1') }}
-					{{ Form::text('telefono_rep_1', null, array('class' => 'form-control', 'placeholder'=>'Digita el teléfono')) }}
+					{{ Form::text('telefono_rep_1', null, array('class' => 'form-control', 'placeholder'=>'Digita el telÃ©fono')) }}
           {!! $errors->first('telefono_rep_1', '<span class="help-block">:message</span>') !!}
 				</div>
-           
+
 						<div class="form-group ">
-								{{ Form::label('fotorep1', 'Foto del Representante 1') }}
-								<span class="help-block">Carga la foto del Representante 1</span>
+								{{ Form::label('fotorep1', 'Foto del representante 1') }}
+								<span class="help-block">Carga la foto del representante 1</span>
 								<input type="file" name="fotorep1" accept="image/png,image/gif,image/jpeg" class="BotonesUpload">
 							</div>
-				
+
 			</div>
 		</div>
 	</div>
@@ -65,24 +100,24 @@
 						</div>
         <div class="form-group {{ $errors->has('correo_rep_2') ? 'has-error': '' }}">
 					{{ Form::label('correo_rep_2', 'Correo del representante 2') }}
-					{{ Form::text('correo_rep_2', null, array('class' => 'form-control', 'placeholder'=>'Digita el correo electrónico')) }}
+					{{ Form::text('correo_rep_2', null, array('class' => 'form-control', 'placeholder'=>'Digita el correo electrÃ³nico')) }}
           {!! $errors->first('correo_rep_2', '<span class="help-block">:message</span>') !!}
 				</div>
-        
+
         <div class="form-group {{ $errors->has('telefono_rep_2') ? 'has-error': '' }}">
 					{{ Form::label('telefono_rep_2', 'Teléfono del representante 2') }}
-					{{ Form::text('telefono_rep_2', null, array('class' => 'form-control', 'placeholder'=>'Digita el teléfono')) }}
+					{{ Form::text('telefono_rep_2', null, array('class' => 'form-control', 'placeholder'=>'Digita el telÃ©fono')) }}
           {!! $errors->first('telefono_rep_2', '<span class="help-block">:message</span>') !!}
 				</div>
 				<div class="form-group ">
-								{{ Form::label('fotorep2', 'Foto del Representante 2') }}
-								<span class="help-block">Carga la foto del Representante 2</span>
+								{{ Form::label('fotorep2', 'Foto del representante 2') }}
+								<span class="help-block">Carga la foto del representante 2</span>
 								<input type="file" name="fotorep2" accept="image/x-png,image/jpeg,image/jpg"/ class="BotonesUpload">
 							</div>
 			</div>
 		</div>
 	</div>
-	<div class="col-md-12">
+  	<div class="col-md-12">
 		<div class="box box-primary">
 				<div class="box box-body">
 				<div class="col-xs-12 col-sm-4 col-md-4">
@@ -130,7 +165,3 @@
 	</div>
 	{{ Form::close() }}
 @endsection
-@push('styles')
-	<link rel="stylesheet" href="/adminlte/plugins/dropzone/css/dropzone.min.css">
-	<link rel="stylesheet" href="/adminlte/css/ImputType.css">
-@endpush

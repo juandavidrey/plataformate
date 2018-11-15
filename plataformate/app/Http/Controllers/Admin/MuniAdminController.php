@@ -127,6 +127,12 @@ class MuniAdminController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $municipio = Municipio::find($municipio);
+      if (Storage::delete($municipio->fotorep1) or Storage::delete($municipio->fotorep2)) {
+        $municipio->fotorep1 = null;
+        $municipio->fotorep2 = null;
+        $municipio->save();
+        return back()->with('flash', 'Fotos eliminadas');
+      }
     }
 }

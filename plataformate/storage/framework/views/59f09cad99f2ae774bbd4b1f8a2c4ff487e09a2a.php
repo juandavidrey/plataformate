@@ -32,6 +32,7 @@
   <!--Fin documentos-->
   <div class="row">
     <div class=" col-sm-8 col-md-11 col-lg-12">
+      <h4 align="center"><?php echo e($post->municipio->nombre); ?></h4>
       <h4 align="center">Representantes ante la PDJ</h4>
     </div>
   </div>
@@ -56,10 +57,10 @@
       <ul>
         
         <figure >
-		
+
           <img src="<?php echo e(Storage::url( $post->municipio->fotorep2 )); ?>" class="img-responsive" id="ImgOrganizaciones" alt="" >
         </figure>
-		
+
         
         <h5><?php echo e($post->municipio->representante2); ?></h5>
         <li><?php echo e($post->municipio->rol_rep_2); ?></li>

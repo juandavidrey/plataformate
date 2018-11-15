@@ -5,11 +5,8 @@
 <!-- menu-->
 
 <body>
-  </br>
-  </br>
-  </br>
-  </br>
-  <div class="container">
+<br>
+   <div class="container" style="margin-top: 0.5%;">
     <div class="col-lg-4 col-md-4 col-xs-4">
       <div class="rotacion">
 	  <a href="http://enterate.plataformate.com">
