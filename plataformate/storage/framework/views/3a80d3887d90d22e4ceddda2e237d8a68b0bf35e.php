@@ -1,5 +1,4 @@
-
-<footer style="margin-bottom: -25%;" >
+<footer>
 
   <div class="container" style="">
     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">

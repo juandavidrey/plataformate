@@ -11,41 +11,8 @@
 @endsection
 
 @section('content')
-  @if(!empty($municipio->fotorep1 || $municipio->fotorep2))
-    {{ Form::open(['method' => 'DELETE', 'route' => ['admin.muninfo.destroy', $municipio->id]]) }}
-    {{ method_field('DELETE') }} {{ csrf_field() }}
-      <button class="btn btn-danger btn-xs" >
-        Borrar fotos
-      </button>
-    {{ Form::close() }}
-  @endif
-  @if(!empty($municipio->fotorep1))
-  <div class="col-md-12">
-    <div class="box box-primary">
-      <div class="box box-body">
-        <div class="row">
-            <div class="col-xs-4 col-md-3">
-              <img class="img-responsive" src="{{ Storage::url( $municipio->fotorep1 ) }}">
-            </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  @endif
-  @if(!empty($municipio->fotorep2))
-  <div class="col-md-12">
-    <div class="box box-primary">
-      <div class="box box-body">
-        <div class="row">
-            <div class="col-xs-4 col-md-3">
-                Borrar fotos
-              <img class="img-responsive" src="{{ Storage::url( $municipio->fotorep2 ) }}">
-            </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  @endif
+  
+  
   <!-- Uso de laravel collective -->
   {{ Form::model($municipio, array('route' => array('admin.muninfo.update', $municipio->id), 'method' => 'PUT', 'files' => true)) }}
 	<div class="row">
@@ -53,6 +20,19 @@
 		<div class="box box-primary">
 			<div class="box-body">
 
+						
+  @if(!empty($municipio->fotorep1))
+ 
+
+			 {{ Form::label('fotorep1', 'Foto del representante 1') }}
+			 
+              <center><img class="img-responsive" style="height:40%; width:40%; padding-bottom:2%;" src="{{ Storage::url( $municipio->fotorep1 ) }}"></center>
+           
+           
+  @endif
+			
+			
+			
 						<div class="form-group {{ $errors->has('representante1') ? 'has-error': '' }}">
 								{{ Form::label('representante1', 'Nombre del representante 1') }}
 								{{ Form::text('representante1', null, array('class' => 'form-control', 'placeholder'=>'Digita el nombre del representante')) }}
@@ -88,6 +68,16 @@
 	<div class="col-xs-12 col-sm-6 col-md-6">
 		<div class="box box-primary">
 			<div class="box-body">
+			@if(!empty($municipio->fotorep2))
+  
+                {{ Form::label('fotorep2', 'Foto del representante 2') }}
+               <center> <img class="img-responsive" style="height:40%; width:40%; padding-bottom:2%;" src="{{ Storage::url( $municipio->fotorep2 ) }}"></center>
+            
+        
+      
+    
+  
+  @endif
        <div class="form-group {{ $errors->has('representante2') ? 'has-error': '' }}">
 							{{ Form::label('representante2', 'Nombre del representante 2') }}
               {{ Form::text('representante2', null, array('class' => 'form-control', 'placeholder'=>'Digita el nombre del representante')) }}
@@ -117,6 +107,18 @@
 			</div>
 		</div>
 	</div>
+	<div class="col-md-7" >
+	<div style="display:block; float:right; padding-bottom: 2.3% ;" >
+	@if(!empty($municipio->fotorep1 || $municipio->fotorep2))
+    {{ Form::open(['method' => 'DELETE', 'route' => ['admin.muninfo.destroy', $municipio->id]]) }}
+    {{ method_field('DELETE') }} {{ csrf_field() }}
+      <button class="btn btn-danger btn-lg" >
+        Borrar fotos
+      </button>
+    {{ Form::close() }}
+  @endif
+	</div>	
+	</div>	
   	<div class="col-md-12">
 		<div class="box box-primary">
 				<div class="box box-body">

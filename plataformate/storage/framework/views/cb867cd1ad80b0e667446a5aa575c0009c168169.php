@@ -194,15 +194,12 @@
 	</div>
 	</div>
 	<div class="DivFixed">
-  <a rel="home" href="http://radio.meta.gov.co/app/radiometa.html" target="popup" 
+  <a rel="home" href="http://radio.meta.gov.co/app/radiometa.html" target="popup"
   onclick="window.open(this.href, this.target, 'toolbar=0 , location=0 , status=0 , menubar=0 , scrollbars=0 , resizable=0,width=430px,height=600px');
   return false;" >
-    <img src=<?php echo e(asset ('assets/img/RadioPlataformate.png')); ?>  >
+    <img src=<?php echo e(asset ('assets/img/RadioPlataformate.png')); ?> style="border-radius: 25px;"  >
   </a>
 	</div>
-</div>
-</div>
-</div>
 <?php echo $__env->make('footer', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
 
 <?php $__env->stopSection(); ?>
@@ -210,7 +207,7 @@
 <?php $__env->startPush('styles'); ?>
 
  <!-- Estilos CSS -->
-  
+
   <link rel="stylesheet" href="assets/css/map.css">
   <link rel="stylesheet" href="assets/css/hover-min.css">
   <link rel="stylesheet" href="assets/css/perfect-scrollbar.css">

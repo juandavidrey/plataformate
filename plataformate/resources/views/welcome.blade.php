@@ -3,7 +3,7 @@
 
 <!-- <div id="video-viewport"> -->
 <a href="{{ URL::to('home') }}">
-  <video autoplay muted loop>
+  <video autoplay muted loop style="height: 100%; width: 100%;">
     <source src="assets/video/Intro-plataformate.mp4" type="video/mp4" />
     <source src="assets/video/Intro-plataformate.ogg" type="video/ogg" />
   </video>
@@ -15,9 +15,7 @@
 @endsection
 
 @push('styles')
-<!-- Estilos CSS -->
-<link rel="stylesheet" href="assets/css/style.css">
-
+  <link rel="stylesheet" type="text/css" href="assets/css/headerStyle.css">
 @endpush
 
 @push('scripts')

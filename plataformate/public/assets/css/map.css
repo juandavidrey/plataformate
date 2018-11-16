@@ -254,9 +254,12 @@ border: 1px solid #ebb803;
 .DivFixed{
 
     position: fixed;
-    bottom: 350px;
-    right: 10px;
-    border: 3px solid #73AD21;
+    bottom: 50%;
+    right: 2%;
+    border: 2px solid #64b300;
+    border-radius: 25px;
+	
+    
 
  }
 .modal-body {
