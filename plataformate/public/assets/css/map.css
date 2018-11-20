@@ -8,11 +8,8 @@
 	 
 }
 .cuerpo{
-    margin: 7px 2% ;
-    position: relative;
-    min-height: 100%;
-    margin: 0 auto -209px;
-    padding-top: 3%;
+    margin-top: 1%;
+    flex: 1 0 auto;
 }
 header, #header-sticky {
     height: 80px;
