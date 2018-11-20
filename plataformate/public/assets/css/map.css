@@ -10,7 +10,9 @@
 .cuerpo{
     margin: 7px 2% ;
     position: relative;
-	
+    min-height: 100%;
+    margin: 0 auto -209px;
+    padding-top: 3%;
 }
 header, #header-sticky {
     height: 80px;
@@ -94,7 +96,7 @@ header, #header-sticky {
 /* clase para los textos de la pagina de  inicio*/
 .indexText{
     font-family: beepo !important;
-   font-size:2.5vw;
+   font-size:241%;
    text-align: center;
 }
 

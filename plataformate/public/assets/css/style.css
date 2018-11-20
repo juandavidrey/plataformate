@@ -5,13 +5,13 @@
 .row{
 	margin-right:0;}
 body{
-	/*background: url('../img/bg.png');*/
-	/*background-size: 100%;*/
+	/*background: url('../img/bg.png');
+	background-size: 100%;
 	max-width: 1920px;
 	margin: 0 auto 150px;
 	padding:10% , 10%, 0px, 10%;
-	 padding-bottom: 70px; 
-	/*background-repeat: no-repeat;*/
+	padding-bottom: 70px; 
+	background-repeat: no-repeat;*/
 }
 /*
 * { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
@@ -237,5 +237,11 @@ center, .letra_index{
     max-height: 6%;
     min-height: 5%;
     width: 100%;
-
+}
+#footer{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    max-width: 100%;
 }

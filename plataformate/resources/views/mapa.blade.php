@@ -191,16 +191,17 @@
             src="{{ asset('assets/img/map/instrucciones.png') }}"   />
        </div>
 
+	{{-- </div> --}}
+	{{-- </div> --}}
+  <div class="DivFixed">
+    <a rel="home" href="http://radio.meta.gov.co/app/radiometa.html" target="popup"
+    onclick="window.open(this.href, this.target, 'toolbar=0 , location=0 , status=0 , menubar=0 , scrollbars=0 , resizable=0,width=430px,height=600px');
+    return false;" >
+      <img src={{ asset ('assets/img/RadioPlataformate.png') }} style="border-radius: 25px;"  >
+    </a>
   </div>
-	</div>
-	</div>
-	<div class="DivFixed">
-  <a rel="home" href="http://radio.meta.gov.co/app/radiometa.html" target="popup"
-  onclick="window.open(this.href, this.target, 'toolbar=0 , location=0 , status=0 , menubar=0 , scrollbars=0 , resizable=0,width=430px,height=600px');
-  return false;" >
-    <img src={{ asset ('assets/img/RadioPlataformate.png') }} style="border-radius: 25px;"  >
-  </a>
-	</div>
+</div>
+</div>
 @include('footer')
 
 @endsection
