@@ -107,10 +107,10 @@
 
           </div>
 
-          <div class="form-group <?php echo e($errors->has('rol_contacto') ? 'has-error': ''); ?>">
+          <div class="form-group <?php echo e($errors->has('rol') ? 'has-error': ''); ?>">
             <label>Rol en la organización</label>
-            <textarea name="rol_contacto" class="form-control" placeholder="Rol del contacto en la organización"><?php echo e(old('rol', $post->rol)); ?></textarea>
-            <?php echo $errors->first('rol_contacto', '<span class="help-block">:message</span>'); ?>
+            <textarea name="rol" class="form-control" placeholder="Rol del contacto en la organización"><?php echo e(old('rol', $post->rol)); ?></textarea>
+            <?php echo $errors->first('rol', '<span class="help-block">:message</span>'); ?>
 
           </div>
 

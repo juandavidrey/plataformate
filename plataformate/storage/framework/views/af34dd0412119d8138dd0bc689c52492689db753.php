@@ -9,7 +9,21 @@
 <?php $__env->stopSection(); ?>
 
 <?php $__env->startSection('content'); ?>
-  
+  <div class="col-md-7" >
+	<div style="display:block; float:right; padding-bottom: 2.3% ;" >
+	<?php if(!empty($municipio->fotorep1 || $municipio->fotorep2)): ?>
+    <?php echo e(Form::open(['method' => 'DELETE', 'route' => ['admin.muninfo.destroy', $municipio->id]])); ?>
+
+    <?php echo e(method_field('DELETE')); ?> <?php echo e(csrf_field()); ?>
+
+      <button class="btn btn-danger btn-lg" >
+        Borrar fotos
+      </button>
+    <?php echo e(Form::close()); ?>
+
+  <?php endif; ?>
+	</div>	
+	</div>	
   
   <!-- Uso de laravel collective -->
   <?php echo e(Form::model($municipio, array('route' => array('admin.muninfo.update', $municipio->id), 'method' => 'PUT', 'files' => true))); ?>
@@ -134,21 +148,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="col-md-7" >
-	<div style="display:block; float:right; padding-bottom: 2.3% ;" >
-	<?php if(!empty($municipio->fotorep1 || $municipio->fotorep2)): ?>
-    <?php echo e(Form::open(['method' => 'DELETE', 'route' => ['admin.muninfo.destroy', $municipio->id]])); ?>
-
-    <?php echo e(method_field('DELETE')); ?> <?php echo e(csrf_field()); ?>
-
-      <button class="btn btn-danger btn-lg" >
-        Borrar fotos
-      </button>
-    <?php echo e(Form::close()); ?>
-
-  <?php endif; ?>
-	</div>	
-	</div>	
+	
   	<div class="col-md-12">
 		<div class="box box-primary">
 				<div class="box box-body">

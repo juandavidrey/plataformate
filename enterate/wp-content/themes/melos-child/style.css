@@ -2247,6 +2247,7 @@ li.pag-next {
 	text-align: center;
 	padding: 35px 10px;
 	background: #5b2f63;
+	box-shadow:  1px 1px 50px 5px #000;
 }
 #intro #intro-core {
 	width: 100%;

@@ -36,21 +36,23 @@
   </div>
 <!-- / #main-header -->
 
-<div class="modal fadeIn" tabindex="-1" role="dialog" id="myModal" >
+<div class="modal" tabindex="-1" role="dialog" id="myModal" data-easein="expandIn">
   <div class="modal-dialog modal-lg" role="document" >
     <div class="modal-content"  >
+      
       <div class="modal-body" >
-        <div id="carga" /*class="scroll-pane"*/>
+        <div id="carga">
         
         <button type="button" class="cerrar"  onclick="$('#myModal').hide()" >X</button>
           <div class="contenido" >
             <!-- Aquí se carga la información -->
           </div>
-        </div>
-      </div>
+        </div> <!-- /.carga -->
+      </div> <!-- /.modal-body -->
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
+
 <div class="row">
 
   <!-- Mapa -->
@@ -214,6 +216,8 @@
   <link rel="stylesheet" href="assets/css/perfect-scrollbar.css">
   <link rel="stylesheet" type="text/css" href="assets/css/headerStyle.css">
 
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+
 <?php $__env->stopPush(); ?>
 
 <?php $__env->startPush('scripts'); ?>
@@ -222,6 +226,9 @@
   <script>
     var ps = new PerfectScrollbar('#carga');
   </script>
+
+  
+  
 <?php $__env->stopPush(); ?>
 
 <?php echo $__env->make('layout', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

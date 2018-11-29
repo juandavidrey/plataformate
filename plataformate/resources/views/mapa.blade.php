@@ -37,21 +37,27 @@
   </div>
 <!-- / #main-header -->
 
-<div class="modal fadeIn" tabindex="-1" role="dialog" id="myModal" >
+<div class="modal" tabindex="-1" role="dialog" id="myModal" data-easein="expandIn">
   <div class="modal-dialog modal-lg" role="document" >
     <div class="modal-content"  >
+      {{-- <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+              ×
+          </button>
+      </div> --}}
       <div class="modal-body" >
-        <div id="carga" /*class="scroll-pane"*/>
+        <div id="carga">
         {{--<button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="$('#myModal').hide()"><p id="icon">X</p></button> --}}
         <button type="button" class="cerrar"  onclick="$('#myModal').hide()" >X</button>
           <div class="contenido" >
             <!-- Aquí se carga la información -->
           </div>
-        </div>
-      </div>
+        </div> <!-- /.carga -->
+      </div> <!-- /.modal-body -->
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
+
 <div class="row">
 
   <!-- Mapa -->
@@ -215,6 +221,8 @@
   <link rel="stylesheet" href="assets/css/perfect-scrollbar.css">
   <link rel="stylesheet" type="text/css" href="assets/css/headerStyle.css">
 
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+
 @endpush
 
 @push('scripts')
@@ -223,4 +231,11 @@
   <script>
     var ps = new PerfectScrollbar('#carga');
   </script>
+
+  {{-- efectos para el modal --}}
+  {{-- <script src="assets/js/index.js"></script>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+ <script src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.2/velocity.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.2/velocity.ui.min.js'></script> --}}
 @endpush

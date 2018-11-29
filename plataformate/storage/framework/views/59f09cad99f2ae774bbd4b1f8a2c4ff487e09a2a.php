@@ -3,36 +3,37 @@
 <?php $__env->startSection('content'); ?>
 <!--Contenido-->
 
-<?php $__currentLoopData = $posts; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $post): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+<?php $__currentLoopData = $posts; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $pdj): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
   <?php if($loop->first): ?>
   <!--Documentos-->
   <div class="row" >
     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-      <?php if( !empty( $post->municipio->acta ) ): ?>
+      <?php if( !empty( $pdj->municipio->acta ) ): ?>
         <center>
-          <button type="button" style="border-radius:20px" class="btn btn-default" onclick="location.href='<?php echo e(Storage::url( $post->municipio->acta )); ?>'">Acta</button>
+          <button type="button" style="border-radius:20px" class="btn btn-default" onclick="window.open('<?php echo e(Storage::url( $pdj->municipio->acta )); ?>')">Acta</button>
         </center>
       <?php endif; ?>
     </div>
     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-      <?php if( !empty( $post->municipio->resolucion ) ): ?>
+      <?php if( !empty( $pdj->municipio->resolucion ) ): ?>
         <center>
-          <button type="button" style="border-radius:20px" class="btn btn-default" onclick="location.href='<?php echo e(Storage::url( $post->municipio->resolucion )); ?>'">Resoluci&oacuten</button>
+          <button type="button" style="border-radius:20px" class="btn btn-default" onclick="window.open('<?php echo e(Storage::url( $pdj->municipio->resolucion )); ?>')">Resoluci&oacuten</button>
         </center>
       <?php endif; ?>
     </div>
     <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
-      <?php if( !empty( $post->municipio->decreto ) ): ?>
+      <?php if( !empty( $pdj->municipio->decreto ) ): ?>
         <center>
-          <button type="button" style="border-radius:20px" class="btn btn-default" onclick="location.href='<?php echo e(Storage::url( $post->municipio->decreto )); ?>'">Decreto</button>
+          <button type="button" style="border-radius:20px" class="btn btn-default" onclick="window.open('<?php echo e(Storage::url( $pdj->municipio->decreto )); ?>')">Decreto</button>
         </center>
       <?php endif; ?>
     </div>
   </div>
   <!--Fin documentos-->
+
   <div class="row">
     <div class=" col-sm-8 col-md-11 col-lg-12">
-      <h4 align="center"><?php echo e($post->municipio->nombre); ?></h4>
+      <h4 align="center"><?php echo e($pdj->municipio->nombre); ?></h4>
       <h4 align="center">Representantes ante la PDJ</h4>
     </div>
   </div>
@@ -44,13 +45,13 @@
       <ul>
         
         <figure >
-          <img src="<?php echo e(Storage::url( $post->municipio->fotorep1 )); ?>" class="img-responsive" id="ImgOrganizaciones" alt="" >
+          <img src="<?php echo e(Storage::url( $pdj->municipio->fotorep1 )); ?>" class="img-responsive" id="ImgOrganizaciones" alt="" >
         </figure>
         
-        <h5><?php echo e($post->municipio->representante1); ?></h5>
-        <li><?php echo e($post->municipio->rol_rep_1); ?></li>
-        <li><?php echo e($post->municipio->telefono_rep_1); ?></li>
-        <li><?php echo e($post->municipio->correo_rep_1); ?></li>
+        <h5><?php echo e($pdj->municipio->representante1); ?></h5>
+        <li><?php echo e($pdj->municipio->rol_rep_1); ?></li>
+        <li><?php echo e($pdj->municipio->telefono_rep_1); ?></li>
+        <li><?php echo e($pdj->municipio->correo_rep_1); ?></li>
       </ul>
     </div>
     <div class="col-xs-8 col-sm-4 col-md-4 col-lg-4">
@@ -58,21 +59,25 @@
         
         <figure >
 
-          <img src="<?php echo e(Storage::url( $post->municipio->fotorep2 )); ?>" class="img-responsive" id="ImgOrganizaciones" alt="" >
+          <img src="<?php echo e(Storage::url( $pdj->municipio->fotorep2 )); ?>" class="img-responsive" id="ImgOrganizaciones" alt="" >
         </figure>
 
         
-        <h5><?php echo e($post->municipio->representante2); ?></h5>
-        <li><?php echo e($post->municipio->rol_rep_2); ?></li>
-        <li><?php echo e($post->municipio->telefono_rep_2); ?></li>
-        <li><?php echo e($post->municipio->correo_rep_2); ?></li>
+        <h5><?php echo e($pdj->municipio->representante2); ?></h5>
+        <li><?php echo e($pdj->municipio->rol_rep_2); ?></li>
+        <li><?php echo e($pdj->municipio->telefono_rep_2); ?></li>
+        <li><?php echo e($pdj->municipio->correo_rep_2); ?></li>
       </ul>
     </div>
     <div class=" col-sm-2 col-md-2 col-lg-2">
     </div>
   </div>
+<?php endif; ?>
     <!--fin de la información PDJ-->
-  <?php endif; ?>
+  <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+
+    <?php $__currentLoopData = $posts; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $post): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+
   <hr class="separador">
     <div class="row">
       <!--Datos organizacion-->

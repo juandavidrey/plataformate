@@ -1,11 +1,12 @@
 @extends('layout')
 @section('content')
 
-<div id="video-viewport">
+<div id="video-viewport" style="flex: 1 0 auto;">
 <a href="{{ URL::to('home') }}">
   <video autoplay muted loop width="100%">
     <source src="assets/video/Intro-plataformate.mp4" type="video/mp4" />
     <source src="assets/video/Intro-plataformate.ogg" type="video/ogg" />
+    Su navegador no soporta este video
   </video>
 </a>
 </div>

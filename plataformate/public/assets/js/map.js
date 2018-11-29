@@ -33,11 +33,13 @@ var vistaHermosa = document.getElementById("vistaHermosa");
 var villavicencio = document.getElementById("villavicencio");
 
 
-  
+
 //Eventos al click
-  acacias.onclick = function(){ 
-  //alert("haz hecho click en  acacias"); 
+  acacias.onclick = function(){
+
+  //alert("haz hecho click en  acacias");
   $("#myModal").show();
+
   //contenido
   $.ajax({
     type: "GET",
@@ -47,8 +49,8 @@ var villavicencio = document.getElementById("villavicencio");
       }
     });
   }
- barrancadeUpia.onclick = function(){ 
-  //alert("haz hecho click en barranca de upia"); 
+ barrancadeUpia.onclick = function(){
+  //alert("haz hecho click en barranca de upia");
   $("#myModal").show();
   $.ajax({
     type: "GET",
@@ -57,9 +59,9 @@ var villavicencio = document.getElementById("villavicencio");
         $('.contenido').html(a);
       }
     });
-  } 
-  cabuyaro.onclick = function(){ 
-  //alert("haz hecho click en cabuyaro"); 
+  }
+  cabuyaro.onclick = function(){
+  //alert("haz hecho click en cabuyaro");
   $("#myModal").show();
   $.ajax({
     type: "GET",
@@ -70,7 +72,7 @@ var villavicencio = document.getElementById("villavicencio");
     });
   }
   castillaLanueva.onclick = function () {
-    //alert("haz hecho click en castilla la nueva"); 
+    //alert("haz hecho click en castilla la nueva");
     $("#myModal").show();
     $.ajax({
       type: "GET",
@@ -81,7 +83,7 @@ var villavicencio = document.getElementById("villavicencio");
     });
   }
    cubarral.onclick = function () {
-     //alert("haz hecho click en cubarral"); 
+     //alert("haz hecho click en cubarral");
      $("#myModal").show();
      $.ajax({
        type: "GET",
@@ -92,7 +94,7 @@ var villavicencio = document.getElementById("villavicencio");
      });
    }
    cumaral.onclick = function () {
-     //alert("haz hecho click en cumaral"); 
+     //alert("haz hecho click en cumaral");
      $("#myModal").show();
      $.ajax({
        type: "GET",
@@ -103,7 +105,7 @@ var villavicencio = document.getElementById("villavicencio");
      });
    }
    elCalvario.onclick = function () {
-     //alert("haz hecho click en el calvario"); 
+     //alert("haz hecho click en el calvario");
      $("#myModal").show();
      $.ajax({
        type: "GET",
@@ -114,7 +116,7 @@ var villavicencio = document.getElementById("villavicencio");
      });
    }
    elCastillo.onclick = function () {
-     //alert("haz hecho click en el castillo"); 
+     //alert("haz hecho click en el castillo");
      $("#myModal").show();
      $.ajax({
        type: "GET",
@@ -125,7 +127,7 @@ var villavicencio = document.getElementById("villavicencio");
      });
    }
    elDorado.onclick = function () {
-     //alert("haz hecho click en el el dorado"); 
+     //alert("haz hecho click en el el dorado");
      $("#myModal").show();
      $.ajax({
        type: "GET",
@@ -136,7 +138,7 @@ var villavicencio = document.getElementById("villavicencio");
      });
    }
    fuentedeOro.onclick = function () {
-     //alert("haz hecho click en fuente de oro"); 
+     //alert("haz hecho click en fuente de oro");
      $("#myModal").show();
      $.ajax({
        type: "GET",
@@ -147,7 +149,7 @@ var villavicencio = document.getElementById("villavicencio");
      });
    }
    granada.onclick = function () {
-     //alert("haz hecho click en granada"); 
+     //alert("haz hecho click en granada");
      $("#myModal").show();
      $.ajax({
        type: "GET",
@@ -156,9 +158,9 @@ var villavicencio = document.getElementById("villavicencio");
          $('.contenido').html(a);
        }
      });
-   }   
+   }
    guamal.onclick = function () {
-     //alert("haz hecho click en guamal"); 
+     //alert("haz hecho click en guamal");
      $("#myModal").show();
      $.ajax({
        type: "GET",
@@ -169,19 +171,19 @@ var villavicencio = document.getElementById("villavicencio");
        }
      });
    }
-    laMacarena.onclick = function(){ 
-      //alert("haz hecho click en la macarena"); 
+    laMacarena.onclick = function(){
+      //alert("haz hecho click en la macarena");
       $("#myModal").show();
       $.ajax({
         type: "GET",
         url: "/municipios/La-Macarena",
-        success: function(a) {        
+        success: function(a) {
         $('.contenido').html(a);
         }
       });
     }
-laUribe.onclick = function(){ 
-	//alert("haz hecho click en la uribe"); 
+laUribe.onclick = function(){
+	//alert("haz hecho click en la uribe");
 	$("#myModal").show();
 	$.ajax({
     type: "GET",
@@ -192,7 +194,7 @@ laUribe.onclick = function(){
     });
   }
    lejanias.onclick = function () {
-     //alert("haz hecho click en lejanias"); 
+     //alert("haz hecho click en lejanias");
      $("#myModal").show();
      $.ajax({
        type: "GET",
@@ -203,7 +205,7 @@ laUribe.onclick = function(){
      });
    }
    mapiripan.onclick = function () {
-     //alert("haz hecho click en mapiripan"); 
+     //alert("haz hecho click en mapiripan");
      $("#myModal").show();
      $.ajax({
        type: "GET",
@@ -214,7 +216,7 @@ laUribe.onclick = function(){
      });
    }
    mesetas.onclick = function () {
-     //alert("haz hecho click en mesetas"); 
+     //alert("haz hecho click en mesetas");
      $("#myModal").show();
      $.ajax({
        type: "GET",
@@ -225,7 +227,7 @@ laUribe.onclick = function(){
      });
    }
    ptoConcordia.onclick = function () {
-     //alert("haz hecho click en puerto concordia"); 
+     //alert("haz hecho click en puerto concordia");
      $("#myModal").show();
      $.ajax({
        type: "GET",
@@ -247,7 +249,7 @@ laUribe.onclick = function(){
      });
    }
    ptoLleras.onclick = function () {
-     //alert("haz hecho click en ptolleras"); 
+     //alert("haz hecho click en ptolleras");
      $("#myModal").show();
      $.ajax({
        type: "GET",
@@ -258,17 +260,18 @@ laUribe.onclick = function(){
      });
    }
    ptoLopez.onclick = function () {
-     //alert("haz hecho click en puerto lopez"); 
+     // alert("haz hecho click en puerto lopez");
      $("#myModal").show();
      $.ajax({
-       type: "/municipios/Puerto-Lopez",
+       type: "GET",
+       url: "/municipios/Puerto-Lopez",
        success: function (a) {
          $('.contenido').html(a);
        }
      });
    }
    ptoRico.onclick = function () {
-     //alert("haz hecho click en puerto rico"); 
+     //alert("haz hecho click en puerto rico");
      $("#myModal").show();
      $.ajax({
        type: "GET",
@@ -279,7 +282,7 @@ laUribe.onclick = function(){
      });
    }
    restrepo.onclick = function () {
-     //alert("haz hecho click en restrepo"); 
+     //alert("haz hecho click en restrepo");
      $("#myModal").show();
      $.ajax({
        type: "GET",
@@ -290,7 +293,7 @@ laUribe.onclick = function(){
      });
    }
    sancarlosdeGuaroa.onclick = function () {
-     //alert("haz hecho click en san carlos de guaroa"); 
+     //alert("haz hecho click en san carlos de guaroa");
      $("#myModal").show();
      $.ajax({
        type: "GET",
@@ -301,7 +304,7 @@ laUribe.onclick = function(){
      });
    }
    sanjuandeArama.onclick = function () {
-     //alert("haz hecho click en san juan de arama"); 
+     //alert("haz hecho click en san juan de arama");
      $("#myModal").show();
      $.ajax({
        type: "GET",
@@ -312,7 +315,7 @@ laUribe.onclick = function(){
      });
    }
    sanJuanito.onclick = function () {
-     //alert("haz hecho click en san juanito"); 
+     //alert("haz hecho click en san juanito");
      $("#myModal").show();
      $.ajax({
        type: "GET",
@@ -323,7 +326,7 @@ laUribe.onclick = function(){
      });
    }
    sanMartin.onclick = function () {
-     //alert("haz hecho click en san martin"); 
+     //alert("haz hecho click en san martin");
      $("#myModal").show();
      $.ajax({
        type: "GET",
@@ -332,9 +335,9 @@ laUribe.onclick = function(){
          $('.contenido').html(a);
        }
      });
-   } 
+   }
    vistaHermosa.onclick = function () {
-     //alert("haz hecho click en vistahermosa"); 
+     //alert("haz hecho click en vistahermosa");
      $("#myModal").show();
      $.ajax({
        type: "GET",
@@ -345,7 +348,7 @@ laUribe.onclick = function(){
      });
    }
    villavicencio.onclick = function () {
-     //alert("haz hecho click en villavicencio"); 
+     //alert("haz hecho click en villavicencio");
      $("#myModal").show();
      $.ajax({
        type: "GET",
@@ -354,7 +357,7 @@ laUribe.onclick = function(){
          $('.contenido').html(a);
        }
      });
-   }	
+   }
 
 //Hover
 //$('#depMeta').hover( function () {$(this).addClass('hvr-bob'); }, function () { $(this).removeClass('hvr-bob');});

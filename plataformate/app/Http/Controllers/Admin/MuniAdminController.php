@@ -7,6 +7,7 @@ use App\Municipio;
 use App\Http\Controllers\Controller;
 use Validator, Input, Redirect, Session;
 use App\Http\Requests\MunicipiosRequest;
+use Storage;
 
 class MuniAdminController extends Controller
 {
@@ -127,7 +128,7 @@ class MuniAdminController extends Controller
      */
     public function destroy($id)
     {
-        $municipio = Municipio::find($municipio);
+        $municipio = Municipio::find($id);
       if (Storage::delete($municipio->fotorep1) or Storage::delete($municipio->fotorep2)) {
         $municipio->fotorep1 = null;
         $municipio->fotorep2 = null;

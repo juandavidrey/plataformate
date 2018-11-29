@@ -1,4 +1,6 @@
-a:55:{s:7:"address";s:107:"Carrera 33 # 38-45 El Centro – Plazoleta Los Libertadores, en la ciudad de Villavicencio, Meta, Colombia.";s:9:"copyright";s:240:"<p class="text-center">Copyright &copy; 2018 - Desarrollado por la Gerencia para las Juventudes del Secretaría Social de la <a href="http://www.meta.gov.co/">Gobernación del Meta</a>. Powered by <a href="https://moodle.org">Moodle</a></p>";s:9:"customcss";s:1066:"#header .header-menubar {
+a:55:{s:7:"address";s:107:"Carrera 33 # 38-45 El Centro – Plazoleta Los Libertadores, en la ciudad de Villavicencio, Meta, Colombia.";s:9:"copyright";s:240:"<p class="text-center">Copyright &copy; 2018 - Desarrollado por la Gerencia para las Juventudes del Secretaría Social de la <a href="http://www.meta.gov.co/">Gobernación del Meta</a>. Powered by <a href="https://moodle.org">Moodle</a></p>";s:9:"customcss";s:1888:"body.dir-rtl {font-family: beepo; font-size: 1em;}
+
+#header .header-menubar {
     background: #ffffff;;
 }
 .header-main {
@@ -41,12 +43,31 @@ body {
 }
 .header-main .navbar-toggleable-md .custom-menu>ul a.nav-item.nav-link {
     font-family: beepo;
-    font-size: 140%;
+    font-weight: bold;
+    font-size: 120%;
 }
 .theme-slider, #home-page-carousel .carousel-item {
     height: 300px;
-}";s:7:"emailid";s:19:"mperezv@meta.gov.co";s:5:"fburl";s:39:"https://www.facebook.com/SocialMetaSec/";s:12:"footerblink2";s:229:"lang:aboutus|http://enterate.plataformate.com/2018/10/29/plataformate
+}
+
+
+.dir-ltr .homepage-carousel .carousel-inner>.carousel-item .carousel-content {
+    right:80%;
+padding:5px 5px;
+background-color:transparent;
+}
+@font-face { /* where FontName and fontname represents the name of the font you want to add */
+     font-family: 'beepo';
+     src: url([[font:theme|Beepo-ExtraBold.eot]]);
+     src: url([[font:theme|Beepo-ExtraBold.eot]]) format('embedded-opentype'),
+          url([[font:theme|Beepo-ExtraBold.woff]]) format('woff'),
+          url([[font:theme|Beepo-ExtraBold.woff2]]) format('woff2'),
+          url([[font:theme|Beepo-ExtraBold.ttf]]) format('truetype'),
+          url([[font:theme|Beepo-ExtraBold_2.svg]]) format('svg');
+     font-weight: normal;
+     font-style: normal;
+   }";s:7:"emailid";s:19:"mperezv@meta.gov.co";s:5:"fburl";s:39:"https://www.facebook.com/SocialMetaSec/";s:12:"footerblink2";s:229:"lang:aboutus|http://enterate.plataformate.com/2018/10/29/plataformate
 Preguntas Frecuentes|http://enterate.plataformate.com/2018/10/30/preguntas-frecuentes/
 lang:contact|http://enterate.plataformate.com/2018/10/30/contacto/
 
-";s:13:"footerblklogo";s:1:"1";s:13:"footerbtitle2";s:25:"lang:footerbtitle2default";s:13:"footerbtitle3";s:25:"lang:footerbtitle3default";s:13:"footerbtitle4";s:25:"lang:footerbtitle4default";s:8:"footnote";s:284:"Fórmate es un espacio de formación virtual creado desde la Gerencia para las Juventudes de la Secretaría Social de la Gobernación del Meta, en cumplimiento a sus políticas de juventudes y con el ánimo de fortalecer el ámbito académico de la sociedad del departamento del Meta.";s:5:"gpurl";s:0:"";s:4:"logo";s:26:"/SUBTITULOS FORMATE-02.png";s:10:"mspot1desc";s:90:"Puedes fórmarte en cualquier lugar y a cualquier hora del día. Conectate cuando quieras.";s:10:"mspot1icon";s:5:"globe";s:11:"mspot1title";s:14:"Disponibilidad";s:10:"mspot2desc";s:63:"Estudia en línea, aprende con la Gerencia para las Juventudes.";s:10:"mspot2icon";s:14:"graduation-cap";s:11:"mspot2title";s:23:"lang:mspot2titledefault";s:10:"mspot3desc";s:108:"Mantente informado de nuestros anuncios, de nuestra información, visita nuestros foros y nuestras noticias.";s:10:"mspot3icon";s:8:"bullhorn";s:11:"mspot3title";s:9:"Entérate";s:10:"mspot4desc";s:51:"Puedes también conectarte a través de tu celular.";s:10:"mspot4icon";s:6:"mobile";s:11:"mspot4title";s:23:"lang:mspot4titledefault";s:14:"numberofslides";s:1:"5";s:13:"patternselect";s:1:"2";s:13:"pcourseenable";s:1:"1";s:7:"phoneno";s:15:"(57 8) 6 818500";s:6:"pinurl";s:56:"https://www.youtube.com/channel/UCPqGyZYZXXr0_ZzwS1VCF_w";s:15:"promotedcourses";s:0:"";s:13:"promotedtitle";s:25:"lang:promotedtitledefault";s:13:"slide1caption";s:33:"¿Sabes qué es el programa JOSE?";s:11:"slide1image";s:16:"/que es JOSE.jpg";s:9:"slide1url";s:49:"http://enterate.plataformate.com/2018/10/03/jose/";s:13:"slide1urltext";s:13:"lang:knowmore";s:13:"slide2caption";s:27:"Diplomado en emprendimiento";s:11:"slide2image";s:29:"/BANNER_Mesa de trabajo 1.jpg";s:9:"slide2url";s:0:"";s:13:"slide2urltext";s:13:"lang:knowmore";s:13:"slide3caption";s:44:"Encuentro departamental de jóvenes del Meta";s:11:"slide3image";s:14:"/BANNER-05.jpg";s:9:"slide3url";s:0:"";s:13:"slide3urltext";s:0:"";s:13:"slide4caption";s:36:"Encuentro departamental de jóvenes ";s:11:"slide4image";s:14:"/BANNER-06.jpg";s:9:"slide4url";s:0:"";s:13:"slide4urltext";s:0:"";s:13:"slide5caption";s:36:"Encuentro departamental de jóvenes ";s:11:"slide5image";s:14:"/BANNER-01.jpg";s:9:"slide5url";s:0:"";s:13:"slide5urltext";s:0:"";s:15:"toggleslideshow";s:1:"1";s:5:"twurl";s:33:"https://twitter.com/SocialMetaSec";s:7:"version";s:10:"2018101301";}
+";s:13:"footerblklogo";s:1:"1";s:13:"footerbtitle2";s:25:"lang:footerbtitle2default";s:13:"footerbtitle3";s:25:"lang:footerbtitle3default";s:13:"footerbtitle4";s:25:"lang:footerbtitle4default";s:8:"footnote";s:284:"Fórmate es un espacio de formación virtual creado desde la Gerencia para las Juventudes de la Secretaría Social de la Gobernación del Meta, en cumplimiento a sus políticas de juventudes y con el ánimo de fortalecer el ámbito académico de la sociedad del departamento del Meta.";s:5:"gpurl";s:0:"";s:4:"logo";s:26:"/SUBTITULOS FORMATE-02.png";s:10:"mspot1desc";s:90:"Puedes fórmarte en cualquier lugar y a cualquier hora del día. Conectate cuando quieras.";s:10:"mspot1icon";s:5:"globe";s:11:"mspot1title";s:14:"Disponibilidad";s:10:"mspot2desc";s:63:"Estudia en línea, aprende con la Gerencia para las Juventudes.";s:10:"mspot2icon";s:14:"graduation-cap";s:11:"mspot2title";s:23:"lang:mspot2titledefault";s:10:"mspot3desc";s:108:"Mantente informado de nuestros anuncios, de nuestra información, visita nuestros foros y nuestras noticias.";s:10:"mspot3icon";s:8:"bullhorn";s:11:"mspot3title";s:9:"Entérate";s:10:"mspot4desc";s:51:"Puedes también conectarte a través de tu celular.";s:10:"mspot4icon";s:6:"mobile";s:11:"mspot4title";s:23:"lang:mspot4titledefault";s:14:"numberofslides";s:1:"5";s:13:"patternselect";s:1:"2";s:13:"pcourseenable";s:1:"1";s:7:"phoneno";s:15:"(57 8) 6 818500";s:6:"pinurl";s:56:"https://www.youtube.com/channel/UCPqGyZYZXXr0_ZzwS1VCF_w";s:15:"promotedcourses";s:0:"";s:13:"promotedtitle";s:25:"lang:promotedtitledefault";s:13:"slide1caption";s:0:"";s:11:"slide1image";s:29:"/BANNER_Mesa de trabajo 1.jpg";s:9:"slide1url";s:49:"http://enterate.plataformate.com/2018/10/03/jose/";s:13:"slide1urltext";s:10:"Saber más";s:13:"slide2caption";s:0:"";s:11:"slide2image";s:14:"/BANNER-02.jpg";s:9:"slide2url";s:0:"";s:13:"slide2urltext";s:0:"";s:13:"slide3caption";s:0:"";s:11:"slide3image";s:14:"/BANNER-03.jpg";s:9:"slide3url";s:0:"";s:13:"slide3urltext";s:0:"";s:13:"slide4caption";s:0:"";s:11:"slide4image";s:14:"/BANNER-06.jpg";s:9:"slide4url";s:0:"";s:13:"slide4urltext";s:0:"";s:13:"slide5caption";s:0:"";s:11:"slide5image";s:14:"/BANNER-01.jpg";s:9:"slide5url";s:0:"";s:13:"slide5urltext";s:0:"";s:15:"toggleslideshow";s:1:"1";s:5:"twurl";s:33:"https://twitter.com/SocialMetaSec";s:7:"version";s:10:"2018101301";}
