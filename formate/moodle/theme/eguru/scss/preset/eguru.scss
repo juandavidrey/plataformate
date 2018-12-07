@@ -826,7 +826,6 @@ img {
                 }
                 a.nav-item.nav-link {
                     margin: 0;
-		    font-family: beepo;
                 }
             }
             .dropdown-menu a {
@@ -873,8 +872,7 @@ img {
         }
         &:before {
             content: '\f0c9';
-            font-family: beepo;
-            /* font-family: $font_3; */
+            font-family: $font_3;
             color: $white;
             font-size: 26px;
         }
@@ -1968,7 +1966,7 @@ img {
         }
     }
     .homepage-carousel .carousel-inner > .carousel-item {
-        min-height: 100%;
+        min-height: 493px;
         .item-inner-wrap {
             min-height: 493px;
             position: relative;
@@ -5829,19 +5827,3 @@ button.closebutton {
         }
     }
 }
-@font-face { /* where FontName and fontname represents the name of the font you want to add */
-     font-family: 'beepo';
-src: url('../theme/eguru/fonts/beepo.woff');
- src: url('../theme/eguru/fonts/beepo.eot') format('embedded-opentype'),
-      url('../theme/eguru/fonts/beepo.woff') format('woff'),
-      url('../theme/eguru/fonts/beepo.ttf') format('truetype'),
-      url('../theme/eguru/fonts/beepo.svg') format('svg');
-     /*src: url([[font:theme|beepo.eot]]);
-     src: url([[font:theme|beepo.eot]]) format('embedded-opentype'),
-          url([[font:theme|beepo.woff]]) format('woff'),
-          url([[font:theme|beepo.woff2]]) format('woff2'),
-          url([[font:theme|beepo.ttf]]) format('truetype'),
-          url([[font:theme|beepo.svg]]) format('svg');*/
-     font-weight: normal;
-     font-style: normal;
-   }

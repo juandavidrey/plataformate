@@ -125,10 +125,10 @@ header, #header-sticky {
     }
 
     p{font-size: 12px;
-        font-family: montserrat !important;}
+        }
      #icon {font-size: 22px; color:white;}
     li {list-style: none;font-size: 12px;
-        font-family: montserrat !important;
+        
 
        }
 
@@ -178,7 +178,7 @@ button.cerrar {
     /*right: -12px;*/
     top: 12px;
     /*border-radius: 50%;*/
-    font-size: 40px;
+    font-size: 2em;
     /*border: 2px solid #fff;*/
    /* line-height: 40px;*/
     /*-webkit-box-shadow: 0 0 1px 1px rgba(0,0,0,0.35);*/

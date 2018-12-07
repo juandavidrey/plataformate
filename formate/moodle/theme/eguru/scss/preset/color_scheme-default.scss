@@ -236,6 +236,9 @@ a {
     }
 }
 .homepage-carousel {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
     .carousel-control {
         background: $color_primary;
     }
@@ -926,14 +929,3 @@ table.flexible {
 #page-course-management .dropdown .dropdown-menu a {
     padding: .25rem 1.5rem!important;
 }
-@font-face { /* where FontName and fontname represents the name of the font you want to add */
-     font-family: 'beepo';
-     src: url([[font:theme|beepo.eot]]);
-     src: url([[font:theme|beepo.eot]]) format('embedded-opentype'),
-          url([[font:theme|beepo.woff]]) format('woff'),
-          url([[font:theme|beepo.woff2]]) format('woff2'),
-          url([[font:theme|beepo.ttf]]) format('truetype'),
-          url([[font:theme|beepo.svg]]) format('svg');
-     font-weight: normal;
-     font-style: normal;
-   }

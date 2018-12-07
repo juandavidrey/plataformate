@@ -90,7 +90,7 @@ function tool_dataprivacy_myprofile_navigation(tree $tree, $user, $iscurrentuser
 function tool_dataprivacy_standard_footer_html() {
 
     $url = new moodle_url('/admin/tool/dataprivacy/summary.php');
-    $output = '<img src="http://formate.plataformate.com/theme/eguru/pix/BarraDeColores.png" height="" width="100%" border="0" alt="name"/>';
+    $output = '<img src="http://formate.plataformate.com/theme/eguru/pix/BarraDeColores.png" width="100%" border="0" alt="name" style="height: 40px;"/>';
     $output = html_writer::div($output, 'summaryfooter');
 
     return $output;

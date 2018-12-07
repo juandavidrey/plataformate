@@ -22,9 +22,9 @@
     <?php echo e(Form::close()); ?>
 
   <?php endif; ?>
-	</div>	
-	</div>	
-  
+	</div>
+	</div>
+
   <!-- Uso de laravel collective -->
   <?php echo e(Form::model($municipio, array('route' => array('admin.muninfo.update', $municipio->id), 'method' => 'PUT', 'files' => true))); ?>
 
@@ -33,20 +33,20 @@
 		<div class="box box-primary">
 			<div class="box-body">
 
-						
+
   <?php if(!empty($municipio->fotorep1)): ?>
- 
+
 
 			 <?php echo e(Form::label('fotorep1', 'Foto del representante 1')); ?>
 
-			 
+
               <center><img class="img-responsive" style="height:40%; width:40%; padding-bottom:2%;" src="<?php echo e(Storage::url( $municipio->fotorep1 )); ?>"></center>
-           
-           
+
+
   <?php endif; ?>
-			
-			
-			
+
+
+
 						<div class="form-group <?php echo e($errors->has('representante1') ? 'has-error': ''); ?>">
 								<?php echo e(Form::label('representante1', 'Nombre del representante 1')); ?>
 
@@ -96,15 +96,15 @@
 		<div class="box box-primary">
 			<div class="box-body">
 			<?php if(!empty($municipio->fotorep2)): ?>
-  
+
                 <?php echo e(Form::label('fotorep2', 'Foto del representante 2')); ?>
 
                <center> <img class="img-responsive" style="height:40%; width:40%; padding-bottom:2%;" src="<?php echo e(Storage::url( $municipio->fotorep2 )); ?>"></center>
-            
-        
-      
-    
-  
+
+
+
+
+
   <?php endif; ?>
        <div class="form-group <?php echo e($errors->has('representante2') ? 'has-error': ''); ?>">
 							<?php echo e(Form::label('representante2', 'Nombre del representante 2')); ?>
@@ -148,7 +148,7 @@
 			</div>
 		</div>
 	</div>
-	
+
   	<div class="col-md-12">
 		<div class="box box-primary">
 				<div class="box box-body">
@@ -158,6 +158,18 @@
 							<div class="form-group ">
 								<?php echo e(Form::label('actapdf', 'Acta')); ?>
 
+                <?php if(!empty($municipio->acta)): ?>
+                  <?php
+                  $titulo = substr($municipio->acta, 16)
+                  ?>
+                  <br>
+                  <?php echo e(Form::label('titulo', $titulo)); ?>
+
+                <?php else: ?>
+                  <br>
+                  <?php echo e(Form::label('titulo', 'No existe el archivo')); ?>
+
+                <?php endif; ?>
 								<span class="help-block">Carga el documento en PDF de la plataforma municipal</span>
 								<input type="file" name="actapdf" accept="application/pdf"/ class="BotonesUpload">
 							</div>
@@ -170,6 +182,18 @@
 								<div class="form-group ">
 									<?php echo e(Form::label('resolucionpdf', 'Resolución')); ?>
 
+                  <?php if(!empty($municipio->resolucion)): ?>
+                    <?php
+                    $titulo = substr($municipio->resolucion, 22)
+                    ?>
+                    <br>
+                    <?php echo e(Form::label('titulo', $titulo)); ?>
+
+                  <?php else: ?>
+                    <br>
+                    <?php echo e(Form::label('titulo', 'No existe el archivo')); ?>
+
+                  <?php endif; ?>
 									<span class="help-block">Carga el documento en PDF de la plataforma municipal</span>
 									<input type="file" name="resolucionpdf" accept="application/pdf" class="BotonesUpload">
 								</div>
@@ -182,6 +206,18 @@
 							<div class="form-group">
 								<?php echo e(Form::label('decretopdf', 'Decreto')); ?>
 
+                <?php if(!empty($municipio->decreto)): ?>
+                  <?php
+                  $titulo = substr($municipio->decreto, 19)
+                  ?>
+                  <br>
+                  <?php echo e(Form::label('titulo', $titulo)); ?>
+
+                <?php else: ?>
+                  <br>
+                  <?php echo e(Form::label('titulo', 'No existe el archivo')); ?>
+
+                <?php endif; ?>
 								<span class="help-block">Carga el documento en PDF de la plataforma municipal</span>
 								<input type="file" name="decretopdf" accept="application/pdf" class="BotonesUpload">
 							</div>

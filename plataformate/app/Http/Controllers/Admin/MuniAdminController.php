@@ -101,16 +101,25 @@ class MuniAdminController extends Controller
 	}
 
         if (!empty($request->file('actapdf')) && $request->hasFile('actapdf')) {
+          if (!empty($municipio->acta)){
+            Storage::delete($municipio->acta);
+          }
           $actapdf = $request->file('actapdf');
           $titulo = $actapdf->getClientOriginalName();
           $municipio->acta = $request->file('actapdf')->storeAs('/public/pdf/acta', $titulo);
         }
         if (!empty($request->file('resolucionpdf')) && $request->hasFile('resolucionpdf')) {
+          if (!empty($municipio->resolucion)){
+            Storage::delete($municipio->resolucion);
+          }
           $resolucionpdf = $request->file('resolucionpdf');
           $titulo = $resolucionpdf->getClientOriginalName();
           $municipio->resolucion = $request->file('resolucionpdf')->storeAs('/public/pdf/resolucion', $titulo);
         }
         if (!empty($request->file('decretopdf')) && $request->hasFile('decretopdf')) {
+          if (!empty($municipio->decreto)){
+            Storage::delete($municipio->decreto);
+          }
           $decretopdf = $request->file('decretopdf');
           $titulo = $decretopdf->getClientOriginalName();
           $municipio->decreto = $request->file('decretopdf')->storeAs('/public/pdf/decreto', $titulo);

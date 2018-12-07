@@ -109,7 +109,7 @@ function slideshow() {
     ?>
 <style type="text/css">
     .theme-slider, #home-page-carousel .carousel-item {
-      height:300px;
+      height:550px;
     }
 
 .carousel-item-next.carousel-item-left,

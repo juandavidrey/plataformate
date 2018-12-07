@@ -2924,11 +2924,13 @@ ul.pricing-table:after,
 	margin-left: 30px;
 }
 .layout-sidebar-left #sidebar {
-	display: block;
+	float: right;
+    width: 50%;
+    display: block;
+	/*display: block;
 	float: right;
  	min-width: 50%;
-	max-width: 50%;
-
+	max-width: 50%;*/
 }
 .layout-sidebar-left #sidebar-core {
 	margin-right: 10px;
@@ -4192,6 +4194,7 @@ ul.pricing-table:after,
 	font-weight: 700;
 	text-transform: uppercase;
 	margin-bottom: 10px;
+	color:white;
 }
 
 /* Meta content */
@@ -6820,14 +6823,17 @@ div.wpforms-container-full .wpforms-form button[type="submit"] {
 	
 }
 #estrategias > ul > li > h3 > a {
-	    display: inline-block !important;
-    text-decoration: none;
+text-decoration: none;
     background-color: #FDC600;
     border-radius: 10px;
-    width: 90% !important;
+    min-width: 100%;
     color: black;
-    padding: 12px 24px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    line-height: 400%;
     text-align: center;
+    float: right;
 }
 
 /* Estrategias */

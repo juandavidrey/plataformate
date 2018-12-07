@@ -967,14 +967,3 @@ table.flexible {
         background: $color_secondary;
     }
 }
-@font-face { /* where FontName and fontname represents the name of the font you want to add */
-     font-family: 'beepo';
-     src: url([[font:theme|beepo.eot]]);
-     src: url([[font:theme|beepo.eot]]) format('embedded-opentype'),
-          url([[font:theme|beepo.woff]]) format('woff'),
-          url([[font:theme|beepo.woff2]]) format('woff2'),
-          url([[font:theme|beepo.ttf]]) format('truetype'),
-          url([[font:theme|beepo.svg]]) format('svg');
-     font-weight: normal;
-     font-style: normal;
-   }
